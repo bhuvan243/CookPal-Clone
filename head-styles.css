@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 40px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* navbar css */
+#nav-menu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+  padding: 20px;
+  /* display: none; */
+}
+#nav-side-top{
+  display: flex;
+  justify-content: space-between;
+}
+#nav-menu > div:last-child{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+#navbar-menu{
+  visibility: hidden;
+}
+#nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#nav-links > div > span {
+  padding-left: 20px;
+}
+#active-nav-link {
+  color: green;
+}
+#profile-pic {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+/* header css */
+#banner{
+  background-image: url("https://images.unsplash.com/photo-1533143708019-ea5cfa80213e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3000&q=80");
+  background-size: cover;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+#banner-content {
+  width: 300px;
+  line-height: 30px;
+}
+#banner-content > div:first-child {
+  color: rgba(220, 88, 42, 1);
+  font-size: medium;
+  font-weight: 500;
+}
+#banner-content > div:nth-child(2) {
+  color: white;
+  font-size: x-large;
+  font-weight: 700;
+}
+#banner-content > div:last-child {
+  color: white;
+  font-size: smaller;
+  font-weight: 300;
+}
+/* Search bar */
+#search-tab{
+    display: flex;
+}
+#search-label{
+    padding: 5px 10px;
+    background-color: rgba(243, 243, 243, 1);
+}
+#search-bar{
+    border: none;
+    background-color: rgba(243, 243, 243, 1);
+    width: 100%;
+}
+#search-bar:focus{
+    outline: none;
+}
+#search-bar::placeholder{
+    color: rgba(173, 173, 173, 1);
+}
+#search-icon{
+    padding: 5px 15px;
+    background-color: rgba(80, 158, 47, 1);
+}
+
+/* media queries */
+@media only screen and (max-width: 768px){
+  #navbar-menu{
+    visibility: visible;
+    padding-left: 10px;
+  }
+  #nav-links{
+    display: none;
+  }
+}

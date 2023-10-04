@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookpal Clone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="./head-styles.css">
+    <link rel="stylesheet" href="./body-styles.css">
+    <link rel="stylesheet" href="./footer-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav id="navbar">
+        <!-- <section id="nav-menu">
+            <div id="nav-side-top">
+                <img src="./Assets/cookpal-logo.svg" alt="cookpal-logo">
+                <img id="profile-pic" src="./Assets/profile-pic.jpg" alt="Profile Picture">
+            </div>
+            <div>
+                <span class="active-nav-link">Home</span>
+                <span>Explore</span>
+                <span>Help</span>
+            </div>
+        </section> -->
+        <div style="display: flex; align-items: center; gap: 30px;">
+            <i id="navbar-menu" class="fa-solid fa-bars fa-xl"></i>
+            <img src="./Assets/cookpal-logo.svg" alt="cookpal-logo">
+        </div>
+        <div id="nav-links">
+            <div>
+                <span><a href="#" id="active-nav-link">Home</a></span>
+                <span><a href="#">Explore</a></span>
+                <span><a href="#">Help</a></span>
+            </div>
+            <img id="profile-pic" src="./Assets/profile-pic.jpg" alt="Profile Picture">
+        </div>
+    </nav>
+    <!-- Header section - Banner and searchbar -->
+    <header>
+        <div id="banner">
+            <div id="banner-content">
+                <div>Trending now</div>
+                <div>Mike’s famous salad with cheese</div>
+                <div>By John Mike</div>
+            </div>
+        </div>
+        <div>
+            <h3>Search For Recipes</h3>
+            <div id="search-tab">
+                <div id="search-label">
+                    <i class="fa-solid fa-magnifying-glass fa-sm" style="color: rgba(173, 173, 173, 1);"></i>
+                </div>
+                <input id="search-bar" type="text" placeholder="Search for recipes...">
+                <div id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Recipe card list and filters -->
+    <main>
+        <!-- filter by type section -->
+        <section id="recipe-filter-by-type">
+            <div id="all-recipes" class="recipe-filter" style="background-color: rgba(234, 170, 0, 1);">
+                <span>All Recipes</span>
+                <span>&#62;</span>
+            </div>
+            <div id="veg-recipes" class="recipe-filter" style="background-color: rgba(196, 214, 0, 1);">
+                <span>Veg Recipes Only</span>
+                <span>&#62;</span>
+            </div>
+            <div id="non-veg-recipes" class="recipe-filter" style="background-color: rgba(220, 88, 42, 1);">
+                <span>Non Veg Recipes</span>
+                <span>&#62;</span>
+            </div>
+        </section>
+        <!-- filter by rating section -->
+        <section id="recipe-display">
+            <div id="recipe-filter-by-rating">
+                <h3>Filters</h3>
+                <h4>Rating</h4>
+                <div id="rating-checkbox-list">
+                    <div>
+                        <input id="rating-checkbox-above-4" type="radio" name="rating-checkbox">
+                        <label for="rating-checkbox-above-4">4 and Above</label>
+                    </div>
+                    <div>
+                        <input id="rating-checkbox-below-4" type="radio" name="rating-checkbox">
+                        <label for="rating-checkbox-below-4">Below 4</label>
+                    </div>
+                </div>
+            </div>
+            <div id="recipe-list">
+                <!-- For reference to create card -->
+                <!-- <div class="recipe-card">
+                    <img class="recipe-image"
+                        src="https://plus.unsplash.com/premium_photo-1669260109473-f47d56d858c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+                        alt="Food Photo">
+                    <div class="recipe-type">Veg</div>
+                    <div>
+                        <span class="recipe-name">Russian Salad</span>
+                        <span>
+                            <i class="fa-solid fa-star" style="color: rgba(253, 192, 64, 1);"></i>
+                            <span class="recipe-rating">4.5</span>
+                        </span>
+                    </div>
+                    <div class="recipe-making-time">
+                        <span>40 min</span>
+                        <span>
+                            <i class="fa-regular fa-heart" style="color: rgba(255, 0, 0, 1);"></i>
+                            <i class="fa-regular fa-comment fa-flip-horizontal" style="color: #000000;"></i>
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div id="footer-info">
+            <div id="about-cookpal">
+                <img src="./Assets/cookpal-logo.svg" alt="cookpal-logo">
+                <div>
+                    Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function.
+                    Join our community and let's cook together!
+                </div>
+            </div>
+            <div class="external-links-list">
+                <span>Company</span>
+                <span>Home</span>
+                <span>Explore</span>
+                <span>Team</span>
+                <span>About Us</span>
+                <span>Activity</span>
+            </div>
+            <div class="external-links-list">
+                <span>Resources</span>
+                <span>Blog</span>
+                <span>Use Cases</span>
+                <span>Testimonials</span>
+                <span>Insights</span>
+            </div>
+            <div id="subscribe-section">
+                <img src="./Assets/cookpal-logo.svg" alt="cookpal-logo">
+                <div id="subscribe-section-text">Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+                    aliquam.</div>
+                <div id="subscribe-email-section" style="display: flex; margin-top: 20px;">
+                    <div id="footer-input-tab">
+                        <input type="text" width="100%" placeholder="Your Email">
+                        <span>
+                            <i class="fa-solid fa-at"></i>
+                        </span>
+                    </div>
+                    <button id="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div id="social-media-links">
+            <!-- social icons - from fontawesome -->
+            <i class="fa-brands fa-square-instagram fa-2xl"></i>
+            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+            <i class="fa-brands fa-square-facebook fa-2xl"></i>
+        </div>
+    </footer>
+    <!-- JS linking -->
+    <script src="./static-content-script.js"></script>
+    <script src="./onclick-event-script.js"></script>
+</body>
+
+</html>

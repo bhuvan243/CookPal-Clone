@@ -1,0 +1,77 @@
+/* Footer css */
+/* About Cookpal */
+#footer-info {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  gap: 100px;
+  margin: 60px 0px;
+}
+#about-cookpal > div {
+  margin: 10px 0px;
+  font-weight: 300;
+}
+.external-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(106, 105, 105);
+}
+.external-links-list > span:first-child {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(37, 61, 78, 1);
+}
+#subscribe-section-text {
+  color: rgba(157, 157, 157, 0.994);
+  margin: 10px 0px;
+}
+#footer-input-tab {
+  border: 1px solid rgba(37, 61, 78, 1);
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+}
+#footer-input-tab > input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+#footer-input-tab > input::placeholder {
+  color: rgba(37, 61, 78, 1);
+  padding-left: 5px;
+}
+#footer-input-tab > input:focus {
+  outline: none;
+}
+#subscribe-email-section > button {
+  background-color: rgba(80, 158, 47, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+#social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 60px 0px 30px 0px;
+}
+#social-media-links > i{
+  width: 20px;
+  height: 20px !important;
+}
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+    #footer-info{
+        grid-template-columns: 1fr;
+    }
+    .external-links-list, #subscribe-section, #social-media-links{
+        display: none;
+    }
+}
